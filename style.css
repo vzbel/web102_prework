@@ -1,9 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
+:root{
+    --dark-color:#1b1c1c; 
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: 'Cabin';
-    background-color: #758190;
+    background-color: var(--dark-color);
+    color: white;
 }
+
 
 #tentacles {
     width: 50px;
@@ -11,7 +21,7 @@ body {
 
 .header {
     display: flex;
-    background-color: lightblue;
+    background-color: var(--dark-color);
     padding: 1%;
     align-items: center;
     margin-left: -10px;
@@ -78,4 +88,15 @@ button {
     padding: 1%;
     margin: 1%;
     border-radius: 7px;
+}
+
+.hero{
+    max-width: 604px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero > h2{
+    font-size: 48px;
+    font-weight: bold;
 }
