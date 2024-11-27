@@ -41,7 +41,8 @@ function addGamesToPage(games) {
     // between the end of the src attribute and the end of the tag ("/>")
     gameCard.innerHTML = `<img class="game-img" src="${games[i].img}" />
                           <h3>${games[i].name}</h3>
-                          <p>${games[i].pledged}</p>`;
+                          <p>${games[i].description}</p>
+                          <p>Backers: ${games[i].backers}</p>`;
 
     // append the game to the games-container
     gamesContainer.append(gameCard);
