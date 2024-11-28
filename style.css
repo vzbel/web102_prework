@@ -15,6 +15,15 @@ body {
     color: white;
 }
 
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--mid-dark-color);
+}
+
 
 #tentacles {
     width: 50px;
@@ -22,14 +31,48 @@ body {
 
 .header {
     display: flex;
+    justify-content: space-between;
     background-color: var(--dark-color);
     padding: 1%;
     align-items: center;
     border-bottom: 0.1px solid rgb(58, 58, 58);
+    margin-left: 78px;
+    margin-right: 78px;
+    flex-wrap: wrap;
+}
+
+.header-left{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.header-right{
+    display: flex;
+    max-width: fit-content;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-text-container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 200px;
 }
 
 .header-text{
     font-size: 16px;
+}
+
+#search-input{
+    background-color: rgb(56, 56, 56);
+    color: white;
+    border: 0.05px solid rgb(93, 93, 93);
+    border-radius: 10px;
+    text-align: right;
+    padding: 5px;
 }
 
 .stats-container {
@@ -88,9 +131,9 @@ body {
 button {
     font-family: 'Cabin';
     border: none;
-    padding: 1%;
-    margin: 1%;
+    padding: 10px;
     border-radius: 7px;
+    cursor: pointer;
 }
 
 .hero{
