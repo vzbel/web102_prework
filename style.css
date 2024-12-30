@@ -77,7 +77,11 @@ a{
 
 .stats-container {
     display: flex;
-    align-items: center;
+    max-width: 870px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 90px;
 }
 
 .stats-container:hover{
@@ -86,16 +90,31 @@ a{
 }
 
 .stats-card {
-    background-color: #a8b0bc;
+    border: 1px solid lightblue;
+    background: none;
     border-radius: 7px;
     padding: 1%;
     margin: 1%;
-    width: 100%;
+    flex-grow: 1;
     text-align: center;
+    box-shadow: 5px 5px 5px rgb(53, 53, 53);
+    min-height: 168px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    justify-content: center;
+    padding-left: 30px;
+}
+
+.stats-card > h3{
+    font-weight: 300;
+    font-size: 22px;
 }
 
 #num-contributions, #total-raised, #num-games {
-    font-size: 50px;
+    font-weight: 600;
+    font-size: 36px;
 }
 
 #games-container {
@@ -153,4 +172,47 @@ button {
 
 #description-container > p{
     color: var(--mid-dark-color);
+}
+
+#first-game{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 90px;
+}
+
+.first-game-left{
+    max-width: 60%;
+}
+
+.first-game-img{
+    width: 100%;
+}
+
+.first-game-right{
+    display: flex;
+    flex-direction: column;
+    max-width: 35%;
+}
+
+.first-game-right > h3{
+    font-weight: lighter;
+}
+
+.top-funded-name{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+@media (max-width: 800px){
+    .first-game-left{
+        max-width: 100%;
+    }
+
+    .first-game-right{
+        max-width: 100%;
+    }
 }

@@ -166,7 +166,7 @@ descriptionContainer.append(displayStrElement);
  * Skills used: spread operator, destructuring, template literals, sort
  */
 
-const firstGameContainer = document.getElementById("first-game");
+const firstGameContainer = document.querySelector(".first-game-right");
 const secondGameContainer = document.getElementById("second-game");
 
 const sortedGames = GAMES_JSON.sort((item1, item2) => {
@@ -180,6 +180,8 @@ let [firstGame, secondGame] = sortedGames;
 const topFundedGameElement = document.createElement("p");
 topFundedGameElement.innerHTML = firstGame.name;
 firstGameContainer.append(topFundedGameElement);
+
+topFundedGameElement.classList.add("top-funded-name");
 
 // do the same for the runner up item
 const runnerUpGameElement = document.createElement("p");
