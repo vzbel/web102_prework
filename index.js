@@ -167,7 +167,7 @@ descriptionContainer.append(displayStrElement);
  */
 
 const firstGameContainer = document.querySelector(".first-game-right");
-const secondGameContainer = document.getElementById("second-game");
+const secondGameContainer = document.querySelector(".second-game-right");
 
 const sortedGames = GAMES_JSON.sort((item1, item2) => {
   return item2.pledged - item1.pledged;
@@ -187,3 +187,5 @@ topFundedGameElement.classList.add("top-funded-name");
 const runnerUpGameElement = document.createElement("p");
 runnerUpGameElement.innerHTML = secondGame.name;
 secondGameContainer.append(runnerUpGameElement);
+
+runnerUpGameElement.classList.add("second-funded-name");
