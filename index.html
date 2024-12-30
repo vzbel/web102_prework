@@ -17,10 +17,11 @@
       </div>
 
       <ul class="header-right">
-        <li><input type="search" placeholder="Search" id="search-input" /></li>
-        <li><a href="">Home</a></li>
-        <li><a href="">Stats</a></li>
-        <li><button>Our Games</button></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#stats-section">Stats</a></li>
+        <li>
+          <a href="#games-container"><button>Our Games</button></a>
+        </li>
       </ul>
     </div>
 
@@ -36,7 +37,7 @@
     </div>
     <!-- top games & other interesting stats -->
     <!-- <h2>Stats</h2> -->
-    <div class="stats-container">
+    <div class="stats-container" id="stats-section">
       <div class="stats-card">
         <h3>Individual Contributions</h3>
         <p id="num-contributions"></p>
@@ -82,6 +83,9 @@
           <p>Check out each of our games below!</p>
         </div>
         <div id="button-container">
+          <li>
+            <input type="search" placeholder="Search" id="search-input" />
+          </li>
           <button id="unfunded-btn">Show Unfunded Only</button>
           <button id="funded-btn">Show Funded Only</button>
           <button id="all-btn">Show All Games</button>

@@ -19,6 +19,10 @@ ul{
     list-style-type: none;
 }
 
+li{
+    list-style-type: none;
+}
+
 a{
     text-decoration: none;
     color: var(--mid-dark-color);
@@ -36,9 +40,10 @@ a{
     padding: 1%;
     align-items: center;
     border-bottom: 0.1px solid rgb(58, 58, 58);
-    margin-left: 78px;
-    margin-right: 78px;
     flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 .header-left{
@@ -73,6 +78,7 @@ a{
     border-radius: 10px;
     text-align: right;
     padding: 5px;
+    width: 100%;
 }
 
 .stats-container {
@@ -181,7 +187,7 @@ button {
     max-width: 604px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 68px;
+    margin-top: 150px;
     margin-bottom: 68px;
     text-align: center;
 }
