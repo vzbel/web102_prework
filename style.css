@@ -121,6 +121,8 @@ a{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    max-width: 70%;
+    background-color: grey;
 }
 
 .game-img {
@@ -145,6 +147,14 @@ a{
 
 #button-container {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#button-container button{
+    background-color: rgb(38, 38, 38);
+    color: var(--mid-dark-color);
 }
 
 button {
@@ -221,6 +231,33 @@ button {
     font-size: 24px;
     font-weight: 400;
 }
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1700px;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 40px;
+
+}
+
+.main-aside{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.main-aside h2{
+    font-size: 48px;
+}
+
+.main-aside p{
+    color: var(--mid-dark-color);
+}
+
+
+
 
 @media (max-width: 800px){
     .first-game-left{
